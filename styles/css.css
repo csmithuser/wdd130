@@ -1,0 +1,32 @@
+img {
+    width: 300px;/*use % for pictures that change with the page*/
+    padding: 10px;
+    border: 5px solid #0000ff;
+    border-radius: 50%;
+}
+body {
+    background-color: #0000ff;
+    text-align: center;
+    margin: 0;
+}
+/* this is how you write a comment in line in css*/
+nav a:hover{
+    background-color: white;
+    padding: 30px
+    border: 5px solid #0000ff;
+}
+a{
+    color: #00ffff;
+}
+p{
+font-size: 3em;
+}
+#second{
+    font-size: 2em;
+}
+#content {
+    background-color: magenta;
+    max-width: 1500px; /*this is a good max width thingy*/
+    margin: 0 auto;
+    padding: 80px;
+}
