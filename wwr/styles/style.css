@@ -38,34 +38,46 @@ nav a:hover{
 }
 
 #hero{
-    display: grid;
-    grid-template-columns: 1fr 3fr 1fr;
+    
     margin-top: -100px;
 }
 
 #hero-box{
-    grid-column: 1/4;
-    grid-row: 1/3;
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    /* grid-column: 1/4;
+    grid-row: 1/3; */
     z-index: -1;
+    margin-top: 100px;
 }
 
 #hero-msg{
     grid-column: 2/3;
     grid-row: 1/2;
     z-index: 4;
-    margin-top: 100px;
+    
 }
 
 #hero-img{
     width: 100%;
+    
+}
+
+#dumb{
+    grid-column: 1/4;
+    grid-row: 1/3;
+    z-index: -12;
+    
 }
 
 #hero-msg h1{
     text-align: center;
+    color: #dfe0e4;
 }
 
 #hero-msg h2{
     text-align: center;
+    color: #dfe0e4;
 }
 
 .home-title{
@@ -90,7 +102,7 @@ main section{
 
 .home-grid{
     display: grid;
-    grid-template-columns: repeat(10, fr);
+    grid-template-columns: repeat(10, 1fr);
 }
 
 body{
@@ -146,7 +158,11 @@ footer a:hover{
 }
 
 h2{
-    color: #ff0000;
+    color: #2f3d67;
+}
+
+.bliss{
+    color: #dfe0e4;
 }
 
 .msg h2{
@@ -230,6 +246,13 @@ footer p {
 footer p a:hover {
     text-decoration: underline;
 }  
+
+#stupid{
+    grid-column: 4/9;
+    grid-row: 6/7;
+    background-color: #516a63;
+    padding: 10px;
+}
 
 @media screen and (max-width: 900px) {
     #hero, .home-grid {
