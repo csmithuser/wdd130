@@ -7,15 +7,40 @@
     <link href="styles/css.css" rel="stylesheet">
 </head>
 <body>
-    <div>
+    <div id="content">
         <header>
-
+            <nav>
+                    <img id="logo" href="index.html" src="images/portal_logo.jpeg">
+                    <a href="index.html" target="_blank" class="nav_button">Home Page</a>
+                    <a href="ice_challenges.html" target="_blank" class="nav_button">All ICE Challenges</a>
+                    <a href="wwr/index.html" target="_blank" class="nav_button">WWR</a>
+                    <a href="about_me.html" target="_blank" class="nav_button">About Me</a>
+                    <!--a href="indedx.html">code</a> also target="_blank" puts the link in a new tab-->
+                </nav>
         </header>
         <main>
-
+            <div id="info">
+                <h1>About Me</h1>
+                <p>lorem ipsum dolor sit amet consectetur adipiscing elit dolore do qui voluptas provident consectetur et et facere vero qui deserunt voluptas dignissimos ut ut dolore omnis ducimus animi elit magna placeat ut enim rerum cupidatat molestias cillum optio ullamco cumque mollitia expedita accusamus corrupti ullamco eos facere cupiditate nostrud</p>
+            </div>
+            <div>
+                <h1>Fill out this short survey:</h1>
+        <form action="#" method="post" id="form">
+          <label for="topic">Are you taller than 6ft?</label>
+          <input type="text" name="topic" id="topic">
+          <label for="speaker" id="speaker_label">Do you like rock msuic?</label>
+          <input type="text" name="speaker" id="speaker">
+          <label for="location" id="locate_label">Are you a good person?</label>
+          <input type="text" name="location" id="location">
+          <label for="date" id="date_label">What is your date of birth?</label>
+          <input type="date" name="date" id="date">
+          <input type="submit" value="Sumbit" id="button">
+        </form>
+            </div>
         </main>
         <footer>
-
+            <h1>Contact me!</h1>
+                <p>Here is my email: abc123@gmail.com</p>
         </footer>
     </div>
 </body>
