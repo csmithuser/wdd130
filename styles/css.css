@@ -115,6 +115,7 @@ th, td{
 
 h1{
     font-family: var(--font1);
+    
 }
 
 p{
@@ -123,6 +124,9 @@ p{
 
 #list_h{
     justify-self: center;
+    background-color: var(--green);
+    border: 3px solid var(--dark-blue);
+    padding: 5px;
 }
 
 ul{
@@ -238,8 +242,3 @@ footer{
 /*.toe{
     
 }*/
-background: url('/images/teton.jpeg') no-repeat center / cover fixed var(--dark-blue);
-    
-    /* 2026 Standard: Ensure body stretches to full viewport height */
-    min-height: 100dvh; 
-    margin: 0;
