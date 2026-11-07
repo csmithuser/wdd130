@@ -1,5 +1,7 @@
 /* this is how you write a comment in line in css*/
 
+@import url('https://fonts.googleapis.com/css2?family=Adamina&family=Merienda:wght@300..900&display=swap');
+
 :root{
     --green: #c2e7d9;
     --light-blue: #a6cfd5;
@@ -7,6 +9,8 @@
     --dark-blue: #0f084b;
     --darkest-blue: #0d0221;
     --white: #f5f5f5;
+    --font1: Merienda, arial;
+    --font2: Adamina, arial;
 }
 
 nav{
@@ -20,6 +24,7 @@ nav{
     margin: auto auto;
     border: 3px solid var(--dark-blue);
     padding: 2em;
+    font-family: var(--font1);
 }
 
 #logo {
@@ -50,8 +55,8 @@ body{
     max-width: 1600px; /*this is a good max width thingy*/
     margin: 0 auto;
     padding: 80px;
-    /*background-image: url('wdd130/images/teton.jpeg');*/
     background-color: var(--light-blue);
+    background: url('/images/teton.jpeg') no-repeat center / cover fixed;
 }
 
 #info{
@@ -63,7 +68,7 @@ body{
 
 #info_p{
     text-align: left;
-    padding: 2em;
+    padding: 1em;
     font-size: 27px;
 }
 
@@ -79,12 +84,13 @@ body{
     margin: 3em;
     height: 10em;
     background-color: var(--green);
+    font-family: var(--font1);
 }
 
 table{
     width: 800px;
     height: 200px;
-    justify-self: right;
+    justify-self: center;
     margin: 3em;
     border-spacing: 1em;
     background-color: var(--green);
@@ -95,12 +101,28 @@ table, th, td{
     border: 3px solid var(--dark-blue)
 }
 
+th{
+    font-family: var(--font1);
+}
+
+td{
+    font-family: var(--font2);
+}
+
 th, td{
     padding: 1em;
 }
 
+h1{
+    font-family: var(--font1);
+}
+
+p{
+    font-family: var(--font2);
+}
+
 #list_h{
-    justify-self: left;
+    justify-self: center;
 }
 
 ul{
@@ -109,6 +131,10 @@ ul{
     border: 3px solid var(--dark-blue);
     font-size: 27px;
     background-color: var(--green);
+}
+
+li{
+    justify-self: left;
 }
 
 #form{
@@ -212,3 +238,8 @@ footer{
 /*.toe{
     
 }*/
+background: url('/images/teton.jpeg') no-repeat center / cover fixed var(--dark-blue);
+    
+    /* 2026 Standard: Ensure body stretches to full viewport height */
+    min-height: 100dvh; 
+    margin: 0;
